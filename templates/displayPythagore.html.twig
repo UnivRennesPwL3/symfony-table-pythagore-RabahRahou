@@ -1,4 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block content %} {{ htmlResponse }} {% endblock %}
+{% block title %}Symfony & table de pythagore{% endblock %}
 
+{% block content %}
+    <h1>Rabah RAHOU</h1> 
+    <h2>Table de Pythagore</h2>
+    {{ table|raw }} <!-- Affichage du tableau généré en HTML -->
+{% endblock %}
