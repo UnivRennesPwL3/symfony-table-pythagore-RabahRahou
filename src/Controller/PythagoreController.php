@@ -22,11 +22,9 @@ class PythagoreController extends AbstractController
     public function displayPythagoreAction(): Response
     {
         // Générer la table de Pythagore
-        $tableHtml = $this->pythagoreUtility->display();
-
         // Rendre la vue Twig
         return $this->render('/displayPythagore.html.twig', [
-            'table' => $tableHtml,
+            'table' =>  $this->pythagoreUtility->display(),
         ]);
     }
 }
