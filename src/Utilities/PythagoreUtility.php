@@ -2,7 +2,7 @@
 
 namespace App\Utilities;
 
-class PythagoreUtility
+final class PythagoreUtility
 {
     /**
      * Generate a multiplication table for Pythagorean theorem.
